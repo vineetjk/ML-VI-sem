@@ -1,0 +1,107 @@
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and export to LaTeX again.
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./alphas_images/} }
+
+\begin{document}
+
+\matlabtitle{Kannada Alphabets}
+
+\begin{matlabcode}
+org = imread('alphas3.jpg');
+org_bw = im2bw(org);
+[M N] = size(org_bw);
+ind = 1;
+for j = 1:10
+    for i = 1:5
+        img1 = org_bw(((i-1)*M/5)+1:i*M/5,((j-1)*N/10)+1:(j*N/10));
+        im_comp = imcomplement(img1);
+        im_final = imresize(im_comp,[28 28]);
+        subplot(5,10,ind)
+        imshow(im_final)
+        ind = ind+1;
+    end
+end    
+\end{matlabcode}
+\begin{matlaboutput}
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+Warning: Integer operands are required for colon operator when used as index.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{56.196688409433015em}]{figure_0.png}
+\end{center}
+\begin{matlabcode}
+
+    
+
+
+
+
+\end{matlabcode}
+
+\end{document}
